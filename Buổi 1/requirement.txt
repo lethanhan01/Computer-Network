@@ -1,0 +1,48 @@
+BÀI TẬP TUẦN 1 – IT4062/4062E
+Hạn nộp: Cuối buổi học, điểm cộng cho các sinh viên nộp bài đúng và sớm nhất
+Yêu cầu nộp bài: 
+- Tạo Makefile để biên dịch
+- Đóng gói tất cả file mã nguồn và Makefile vào một file nén có tên theo định dạnh 
+HotenSV_MSSV_HW1.zip. Ví dụ: NguyenVanA_20161234_HW1.zip 
+- Nộp bài theo quy định	
+Chương trình quản lý tài khoản người dùng 
+Thông tin tài khoản người dùng được lưu trên file văn bản có tên là user.txt. Thông tin mỗi tài khoản được lưu trên một dòng theo định dạng 
+username:password:status:score 
+Trong đó status có 2 giá trị cho biết tình trạng của tài khoản: 
+0: Tài khoản đang hoạt động (active)
+1: Tài khoản đang bị khóa (blocked)
+Viết một chương trình hiển thị menu và thực hiện các chức năng tương ứng như sau:
+
+USER MANAGEMENT PROGRAM
+----------------------------------- 
+1. Register
+2. Sign in 
+3. Search
+4. Sort
+Your choice (1-4, other to quit):
+Sử dụng cấu trúc danh sách liên kết (linked-list) để lưu thông tin tài khoản đọc được từ file dữ liệu. 
+Mỗi khi thực hiện 1 chức năng dưới đây, hiển thị lại menu trên
+o	Chức năng 1 (Register): Đăng ký thông tin tài khoản mới. Các thông tin được nhập từ bàn phím bao gồm: tên tài khoản (username), mật khẩu (password) và điểm số (score). 
+	Nếu tên tài khoản đã tồn tại, báo lỗi. 
+	Ngược lại thêm mới thông tin một tài khoản vào file lưu thông tin ở trên.
+•	Tài khoản tạo mới có trạng thái hoạt động là active. 
+•	Thông tin tài khoản mới cần được cập nhật vào file. 
+o	Chức năng 2 (Sign in): Đăng nhập. Người dùng cần nhập các thông tin từ bàn phím bao gồm: tên tài khoản (username), mật khẩu (password). 
+	Nếu tên tài khoản tồn tại và mật khẩu đúng, thông báo người dùng đã đăng nhập thành công. 
+o	Trong các trường hợp khác, bao gồm tài khoản không tồn tại hoặc mật khẩu sai, thông báo lỗi tương ứng. 
+	Nếu người dùng nhập sai mật khẩu quá 3 lần, tài khoản bị khóa. Trạng thái thay đổi cần được cập nhật vào file. 
+o	Chức năng 3 (Search): Tìm kiếm thông tin một tài khoản. Thông tin nhập vào từ bàn phím là tên tài khoản. Chương trình cần hiển thị tên tài khoản tìm thấy và thông báo trạng thái của tài khoản là active hay blocked.
+	 Nếu người dùng chưa đăng nhập hoặc không tìm thấy thông tin tài khoản, thông báo lỗi tương ứng.
+o	Chức năng 4 (Sort&Search): Sắp xếp và tìm kiếm. 
+	Dựa vào điểm số (score) của mỗi tài khoản, hãy sắp xếp danh sách tài khoản theo thứ tự giảm dần của điểm số sử dụng thuật toán sắp xếp nổi bọt (bubble sort) và hiển thị ra danh sách đó bao gồm tên tài khoản và điểm số. 
+	Sau đó sử dụng thuật toán tìm kiếm nhị phân để tìm tài khoản có điểm > 5 và hiển thị ra màn hình thông tin bao gồm tên tài khoản và các điểm số tương ứng của tài khoản đó.
+Lưu ý: File user.txt nằm cùng thư mục với file thực thi chương trình. Cần kiểm soát và bắt các lỗi vào ra file. Chương trình khi submit phải kiểm tra và sửa hết các lỗi khi dịch  
+
+Ví dụ file chứa thông tin tài khoản có nội dung như sau: 
+
+Hedspi:hedpsi2026:1:10
+Hust:hust123:0:4
+soict:soictfit:0:8
+
+Bên dưới là ví dụ minh họa về các tính năng: 
+

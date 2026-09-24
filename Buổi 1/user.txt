@@ -1,0 +1,11 @@
+Hedspi:hedpsi2016:0:10.00
+Hust:hust123:1:4.00
+soict:soictfit:1:8.00
+alice:alice123:1:9.50
+bob:bobpass:1:3.00
+charlie:charlie2024:1:5.00
+david:davidpwd:1:2.50
+khanh:test:1:10.00
+hust:1:0:0.00
+it4062:123456:1:8.00
+lethanhan:123456:0:2.00
