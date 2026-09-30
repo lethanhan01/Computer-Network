@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2 -std=c99 -D_DEFAULT_SOURCE -D_GNU_SOURCE
+CFLAGS = -Wall -Wextra -O2
 
 all: server client
 
@@ -10,13 +10,6 @@ client: client.c
 	$(CC) $(CFLAGS) client.c -o client
 
 clean:
-	rm -f server client *.o *.zip
+	rm -f server client *.o
 
-zip: clean
-	@if [ -z "$(NAME)" ] || [ -z "$(MSSV)" ]; then \
-		echo "Lỗi: Vui lòng truyền NAME và MSSV. Ví dụ: make zip NAME=NguyenVanA MSSV=20161234"; \
-		exit 1; \
-	fi
-	zip -r $(NAME)_$(MSSV)_HW4.zip *.c Makefile
-
-.PHONY: all clean zip
+.PHONY: all clean
